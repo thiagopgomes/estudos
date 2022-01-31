@@ -1,4 +1,5 @@
-Crie uma aplicação onde o usuário seja capaz de acionar o script via linha de comando no formato : php aplicacao.php "argumento1" "argumento2" "argumento n.."
+Crie uma aplicação onde o usuário seja capaz de acionar o script via linha de comando
+no formato : php aplicacao.php "argumento1" "argumento2" "argumento n.."
 
 
 A aplicação deve ser capaz de ler o conteudo do arquivo (imagem, pdf, vídeo, etc) e
