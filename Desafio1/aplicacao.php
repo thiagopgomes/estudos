@@ -11,12 +11,13 @@
 $argumento1 = $argv[1];
 $argumento2 = $argv[2];
 
-function verSeELink($argumento1)
+function verificar($argumento1)
 {
-    $texto = "//www";
+    $texto = "//";
     $pasta = 'docs/';
     $caminho = $pasta . $argumento1;
     $verficacao = strripos($argumento1, $texto);
+
     if($verficacao === false){
         return $caminho;
     } else {
@@ -24,7 +25,7 @@ function verSeELink($argumento1)
     }
 }
 // $determinando o caminho do arquivo
-$caminho = verSeELink($argumento1);
+$caminho = verificar($argumento1);
 
 //cria caminho para a pasta arquivoBase64
 $pasta = 'arquivoBase64/';
@@ -36,8 +37,8 @@ $caminho2 = $pasta . $argumento2;
 // 3 - pega o base_64 e salva em um arquivo na pasta arquivoBase64
 
 $conteudo_arquivo = file_get_contents($caminho);
-$terra_base_64 = base64_encode($conteudo_arquivo);
-file_put_contents($caminho2, $terra_base_64);
+$base_64 = base64_encode($conteudo_arquivo);
+file_put_contents($caminho2, $base_64);
 
 
 
