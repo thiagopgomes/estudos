@@ -18,7 +18,7 @@ class Verificador
         $this->argumento2 = $argumento2;
     }
 
-    public function buscaArquivoInicial()
+    public function buscaArquivoInicial(): string
     {
         $caminho = self::$pastaInicio . $this->argumento1;
         $verficacao = strripos($this->argumento1, self::$texto);
@@ -30,19 +30,18 @@ class Verificador
         }
     }
 
-    public function defineOndeSalvaBase64()
+    public function defineOndeSalvaBase64(): string
     {
         return self::$pastaBase64 . $this->argumento2;
     }
 
-    public function defineOndeSalva()
+    public function defineOndeSalva(): string
     {
         return self::$pastaDecodificado . $this->argumento2;
     }
 
-    public function bucarArquivoBase64()
+    public function bucarArquivoBase64(): string
     {
         return self::$pastaBase64 . $this->argumento1;
     }
-
 }
