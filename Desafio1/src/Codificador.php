@@ -19,4 +19,5 @@ class Codificador
         $base_64 = base64_encode($conteudo_arquivo);
         file_put_contents($this->salvarEm, $base_64);
     }
+
 }

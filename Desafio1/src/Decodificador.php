@@ -19,4 +19,5 @@ class Decodificador
         $conteudo_em_bytes = base64_decode($base_64);
         file_put_contents($this->pastaDestino, $conteudo_em_bytes);
     }
+
 }

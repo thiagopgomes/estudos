@@ -44,4 +44,5 @@ class Verificador
     {
         return self::$pastaBase64 . $this->argumento1;
     }
+
 }

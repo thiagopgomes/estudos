@@ -36,3 +36,5 @@ file_put_contents("gatinho.txt", $gatinho_base_64);
 //$conteudo_em_bytes = base64_decode($conteudo_base_64);
 //
 //file_put_contents("gatinho_2.jpg", $conteudo_em_bytes);
+
+

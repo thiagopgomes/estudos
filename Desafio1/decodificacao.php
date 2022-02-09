@@ -16,4 +16,3 @@ $pastaDestino = $verificador->defineOndeSalva();
 
 $decodificador = new Decodificador($caminhoDoArquivo, $pastaDestino);
 $decodificador->decodifica();
-
