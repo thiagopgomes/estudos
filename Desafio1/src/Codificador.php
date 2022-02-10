@@ -1,6 +1,6 @@
 <?php
 
-namespace Desafio1\Base64\Codificador;
+namespace App;
 
 class Codificador
 {

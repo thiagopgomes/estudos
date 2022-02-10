@@ -1,6 +1,6 @@
 <?php
 
-namespace Desafio1\Base64\Verificador;
+namespace App;
 
 class Verificador
 {
@@ -16,6 +16,7 @@ class Verificador
     {
         $this->argumento1 = $argumento1;
         $this->argumento2 = $argumento2;
+
     }
 
     public function buscaArquivoInicial(): string
